@@ -1,0 +1,53 @@
+body 
+{
+    width: 80%; background-color: rgba(226, 168, 130, 0.651);
+    border: 3px skyblue solid; 
+    margin: auto;
+
+}
+h1{
+    color:aquamarine; 
+    font-size: 50px; 
+    text-align: center;           
+}
+
+#imagen{
+    text-align: center; 
+    margin: auto;            
+}
+
+#imagen img {
+    width: 40%;
+    border:3px blue dashed; 
+    border-radius: 10px;
+}
+
+#imagen #vin {
+    text-align:center; 
+    position: relative; bottom: 80px;
+    color: red; 
+    font-size: 30px;
+
+}
+#texto{
+    width: 70%; 
+    margin: auto;            
+}
+
+#texto p{
+    text-align: justify; 
+    width: 50%; color: rgb(247, 245, 245); 
+    margin: auto; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif'; 
+    font-size: large;
+}
+
+h2{
+    color:rgb(247, 245, 245); 
+    font-size: large; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+}
+ul{
+    color:rgb(247, 245, 245); 
+    font-size: large; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+}
