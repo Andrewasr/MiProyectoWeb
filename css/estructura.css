@@ -1,0 +1,60 @@
+html{
+    width: 1500px;
+    margin: auto;
+}
+body{
+    background-color: rgba(68, 166, 190, 0.733);
+    padding: 15px;
+}
+
+header{
+    background-color: rgba(224, 161, 43, 0.856);
+    padding: 20px;
+
+}
+table{
+    width: 100%;
+    text-align: center;
+    border:1px solid;
+    border-color: rgba(238, 54, 116, 0.521);
+}
+
+th, td {
+    padding: 10px;
+  }
+
+
+h1{
+     color: blue;
+}
+
+#cuerpo{
+    background-color: rgba(151, 241, 91, 0.527);
+    padding: 20px;
+}
+
+
+#cuerpo section{
+    background-color: rgba(193, 223, 154, 0.76);
+    padding: 5px;
+    margin: 10px;
+}
+
+
+#cuerpo section h2{
+    color: rgba(157, 157, 243, 0.637);
+}
+#cuerpo section h3{
+    color: rgba(252, 11, 11, 0.637);
+}
+#cuerpo section p{
+    color: rgba(255, 6, 6, 0.829);
+    font-size: 16px;
+}
+footer{
+    background-color: rgba(224, 161, 43, 0.856);
+    padding: 20px;
+}
+
+
+
