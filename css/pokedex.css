@@ -1,145 +1,748 @@
+@import url('https://fonts.googleapis.com/css2? family= PT+Sans+Narrow & display=swap');
 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }  
+html {
+    background-color:#f30a0a70;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 10px;
+    width: 100%;
+    }
+  
 body{
-    font-family: 'Verdana';
-    margin:0;
-}
+    width: 90%;
+    margin: auto;
+    }
 
 header{
-    background-color: red;
-    color: white;
-    padding: 0% 10% 0%;
+    height: 6em;
+    background-color:#f30a0a;
 }
 
-header > h1{
-    display: inline-block;
-    margin-left: 100px;
+
+
+header > h1 {
+    display:inline-block;
+    margin-left:10%;
+    font-size: 2.5em;
+    
+    
 }
 
-#logo
-{
-    width: 60px;
+#logo{
+    width:4.5em;
+    margin-left: 15%;
+}    
+
+
+.header{
+    display: flex;
+    align-items: flex-start;
 }
 
-nav{    
-margin: 10px 10%;
-}
-nav a {
-    padding: 0 10 px;
+.header-elem{
+    justify-content: space-between;
 }
 
-#pokedex{
-    width: 750px;
-    margin: 50px auto;
+
+nav{
+    font-size: 1.5em;
+    overflow: hidden;
+}
+.items-nav{
+    width: 100%; 
+    margin:auto;
+    display: flex;
+    justify-content: center;
+
 }
 
-#left{
-    width: 250px;
-    height: 300px;
-    float: left;
-    background-color: red;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+.item{
+    width: 90%;    
 }
-#right{
-    width: 250px;
-    height: 250px;
-    margin-top: 50px;
-    background-color: red;
-    border-left-color: rgb(241, 119, 119);
-    border-left-style: solid;
-    border-left-width: 3px;
+
+.items-menu{    
+    display: block;
+    justify-content:space-between;
+    text-align: center;
+    border-bottom:0.1em solid #aac6d1;
+    background-color:#3e5d79;
+    color:white;
+}
+  
+    nav ul {
+    list-style: none;
+    }
+
+  
+    nav span{
+    border: 0.05em solid #3e5d79;
+    border-radius: 0.2em;
+    color:#3e5d79;
+    text-align: center;
+    } 
+
+  nav li a {
+    text-decoration: none;
+  }
+  
+  nav li a:hover {
+    background:#72899c;
+  }
+  
+  nav li a:active {
+    background-color: #da825f;
+  }
+
+  
+  nav li a:not(:first-child) {
+      display: none;
+    }
+
+    main{
+    width: 100%;
+    margin: auto;
+    }
+
+    #pokedex{
+    width:60em; 
+    }
+
+    #left{
+        width:18em;
+        height:18em;
+        float: left;
+        background-color: #f30a0a;
+        border-radius: 2em 2em 0 2em;
+
+}
+    #right{
+    width: 15em;
+    height: 15em;
+    margin-top: 3em;
+    background-color: #f30a0a;
+    border-left: 2px solid #1a021a;
     float:left;
-    border-bottom-right-radius: 30px;
+    border-radius: 0 2em 2em 0;
+    }
+   
+    .display{
+    border-radius:1.5em;
+    border: 0.5em solid slategray;
+    font-family: monospace;
+   
 }
 
-.display{
-    border-color: #494949;
-    border-style: solid;
-    border-radius: 15px;
-    border-width: 5px;
-}
 #left > .display{
-width: 180px;
-height: 150px;
-margin-left: 35px;
-margin-top: 40px;
-background-color: white;
+    width: 14.5em;
+    height: 11em;
+    margin-left: 1.7em;
+    margin-top: 2em;
+    background-color:#fffefe;            
 }
 
-#left > .display > img{
-    margin-left:15px;
-    height: 100%;
+#left > .display > #pkmn-img{
+    width: 60%;
+    margin-top: 0.5em;
+    margin-left: 2em;
 }
 
 #dpad{
-    width: 60px;
-    height: 60px;
-    margin-top: 15px;
-    margin-left: 20px;
-    display: inline-block;
+    width: 4em;
+    height: 2em;
+    margin: 1em 1em;
+    display: inline-block; 
 }
 
 #dpad-arriba, #dpad-abajo{
-    width: 20px;
-    height: 20px;
-    margin-left: 20px;
+    width: 1em;
+    height: 1em;
+    margin-left: 3.5em;
     background-color: black;
 }
 
 #dpad-horizontal{
-    width: 60px;
-    height: 20px;
+    width: 3em;
+    height: 1em;
+    margin-left: 2.5em;
     background-color: black;
 }
 
 #btn-circulo{
-    width: 50px;
-    height: 50px;
-    margin-left: 95px;
-    border-style: solid;
-    border-radius: 25px;
-    border-color:  blue;
-    background-color: aqua;
+    width: 3em;
+    height: 3em;
+    margin-left:5em;
+    border:0.2em solid #004c8b;
+    border-radius: 2.5em;
+    background-color:#3074ac;
     display: inline-block;
 }
 
-
 #right > .display{
-    width: 180px;
-    height: 120px;
-    margin-left: 35px;
-    margin-top: 20px;
-    background-color: green;
-    font-size: 12px;
+    width: 18em;
+    height: 12em;
+    margin: 2em 1.5em;
+    padding-top:1em;    
+    background-color:#010a0a;
+    font-size: 0.7em;
+    color: #64ebd9;    
 }
 
 #pad{
-    width: 148px;
-    height: 65px;
-    margin-left: 60px;
-    margin-top: 15px;
+    width: 9em;
+    height: 2em;
+    margin: -0.7em 3.2em;
 }
 
-#pad >.btn{
-    width: 25px;
-    height: 25px;
-    background-color:  aqua;
+#pad > .btn{
+    width: 1.6em;
+    height: 1.6em;
+    margin:0.1em 0.1em;
+    border:0.2em solid #004c8b;
+    border-radius: 0.3em;
+    background-color: #3074ac;
     display: inline-block;
-    border-style: solid;
-    border-color: blue;
-    border-width: 2px ;
-    border-radius: 3px;
 }
 
 ul{
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
 }
 
 li{
-    list-style-type: none;
+    list-style-type:none;
 }
 
 li > p{
-    margin: 0 5px;
+    margin: 0 1em;
 }
+
+
+
+
+	/*     smarthphone horizontal  & tablets vertical*/
+    @media only screen and (min-width:640px) and (max-width:1023px){
+        header > h1 {
+            font-size:3em;
+            margin-left:15%;
+        }
+            
+        #logo{            
+            margin-left: 20%;
+        }   
+    
+        nav{
+            font-size: 1.7em;    
+        }
+    
+        .nav{
+            height: 2em;
+        }
+    
+        
+        .items-nav{
+            width: 100%;
+            margin:auto;
+            display: flex;
+            justify-content: center;
+
+            
+        }   
+        
+        
+        .items-menu{
+            height: 1.8em;
+            padding: 0 1em;   
+        }
+      
+                       
+        #pokedex{
+            width:50em;
+            margin:auto;
+        }
+            
+        #left{
+            width:27em;
+            height:27em;
+            background-color: #f30a0a;
+            border-radius: 3em 3em 0 3em;    
+        }
+            
+        #right{
+            width: 22em;
+            height: 22em;
+            margin-top: 5em;
+            border-radius: 0 3em 3em 0;
+        }
+            
+        #left > .display{
+            width: 22em;
+            height: 18em;
+            margin-left: 2.5em;
+        }
+            
+        #left > .display > #pkmn-img{
+            width: 80%;
+            margin: 1em 3em;
+        }
+            
+            
+        #dpad{
+            width: 8em;
+            height: 5em;            
+            margin: 1.5em 2em;        
+        }
+            
+        #dpad-arriba, #dpad-abajo{
+            width: 1.4em;
+            height: 1.4em;
+            margin-left: 5em;            
+        }
+            
+        #dpad-horizontal{
+            width: 4.2em;
+            height: 1.4em;
+            margin-left: 3.7em;            
+        }
+            
+        #btn-circulo{
+            width: 4em;
+            height: 4em;
+            margin:0 0 2.5em 4em;           
+        }
+            
+            
+        #right > .display{
+            width: 16em;
+            height: 11em;
+            margin: 1.5em 1em;
+            font-size: 1.2em;           
+        }
+            
+        #pad{
+            width: 12em;
+            height: 3em;
+            margin: -1.2em 5em;
+        }
+            
+        #pad > .btn{
+            width: 2em;
+            height: 2em;
+            margin:0.3em 0.3em;
+            display: inline-block;
+        }
+            
+        }
+
+
+
+
+            /*     tablets horizontal & laptop vertical (touch screen)    */
+@media only screen and (min-width:1024px) and (max-width:1279px){
+    header{
+        height: 7em;
+    }
+
+    header > h1 {  
+        font-size:3em;
+        margin-left: 20%;
+    }
+            
+    #logo{
+        width: 6%;            
+        margin-left: 25%;
+    }    
+      
+    nav{
+        font-size: 2em;
+    }
+            
+    #pokedex{
+        width:80em;
+        margin: 3em auto;
+    }
+            
+    #left{
+        width:42em;
+        height:42em;
+        border-radius: 5em 5em 0 5em;    
+    }
+            
+    #right{
+        width: 38em;
+        height: 35em;
+        margin-top: 7em;
+        border-radius: 0 5em 5em 0;
+    }
+            
+    #left > .display{
+        width: 35em;
+        height: 28em;
+        margin: 3.5em;
+    }
+            
+    #left > .display > #pkm-img{
+        width: 80%;
+        margin: 1em 4em;
+    }
+            
+            
+    #dpad{
+        width: 15em;
+        height: 18em;
+        margin: -1em 3em;        
+    }
+            
+    #dpad-arriba, #dpad-abajo{
+        width: 2.2em;
+        height: 2.2em;
+        margin-left: 7em;            
+    }
+            
+    #dpad-horizontal{
+        width: 6.2em;
+        height: 2.2em;
+        margin-left: 5em;            
+    }
+            
+    #btn-circulo{
+        width: 6.2em;
+        height: 6.2em;
+        margin:-2em 0 10em 6em;           
+    }
+            
+    #right > .display{
+        width: 18em;
+        height: 12em;
+        margin: 1.5em 1.5em;
+        border: 0.3em solid slategray;
+        font-size: 1.8em;           
+    }
+            
+    #pad{
+        width: 23em;
+        height: 4em;
+        margin: -2.2em 8.5em;
+    }
+            
+    #pad > .btn{
+        width: 3.5em;
+        height: 3.5em;
+        border-radius: 0.8em;
+        margin:0.5em 0.7em;                
+    }
+                   
+  }
+
+          /*     laptops    & Monitores  */
+@media only screen and (min-width:1280px) and (max-width:1919px){
+    header{
+        height: 10em;
+    }
+
+    header > h1 {  
+        font-size:3em;
+        margin-left: 20%;
+    }
+            
+    #logo{
+        width: 7%;            
+        margin-left: 0%;
+    }    
+       
+    nav{
+        font-size: 2.1em;
+    }
+            
+    #pokedex{
+        width:100em;
+        margin:-10em auto;
+    }
+            
+    #left{
+        width:56em;
+        height:56em;
+        border-radius: 5em 5em 0 5em;    
+    }
+            
+    #right{
+        width: 52em;
+        height: 46em;
+        margin-top: 10em;
+        border-radius: 0 5em 5em 0;
+    }
+            
+    #left > .display{
+        width: 48em;
+        height: 35em;
+        margin: 4em;
+        border-radius: 3em;
+    }
+            
+    #left > .display > #pkmn-img{
+        width: 80%;
+        margin: 1em 7em;
+    }
+            
+            
+    #dpad{
+        width: 15em;
+        height: 18em;
+        margin: 0 6em;        
+    }
+            
+    #dpad-arriba, #dpad-abajo{
+        width: 4em;
+        height: 4em;
+        margin-left: 7em;            
+    }
+            
+    #dpad-horizontal{
+        width: 12em;
+        height: 4em;
+        margin-left: 3em;            
+    }
+            
+    #btn-circulo{
+        width: 11em;
+        height: 11em;
+        border-radius: 10em;
+        margin:0 0 7em 9em;           
+    }
+            
+    #right > .display{
+        width: 18em;
+        height: 9.5em;
+        margin: 1em 1em;
+        border: 0.1em solid slategray;
+        font-size: 2.6em;           
+    }
+            
+    #pad{
+        width: 40em;
+        height: 8em;
+        margin: -2.2em 8.5em;
+    }
+            
+    #pad > .btn{
+        width: 6em;
+        height: 6em;
+        border-radius: 1.2em;
+        margin:1.2em 1.2em;                
+    }
+}
+
+
+
+        /*     laptops    & Monitores  */
+@media only screen and (min-width:1280px) and (max-width:1919px){
+    header{
+        height: 10em;
+    }
+
+    header > h1 {  
+        font-size:5em;
+        margin-left: 20%;
+    }
+            
+    #logo{
+        width: 7%;            
+        margin-left: 25%;
+    }    
+            
+    nav{
+        font-size: 2.2em;
+    }
+            
+    #pokedex{
+        width:110em;
+        margin:2em auto;
+    }
+            
+    #left{
+        width:56em;
+        height:56em;
+        border-radius: 5em 5em 0 5em;    
+    }
+            
+    #right{
+        width: 52em;
+        height: 46em;
+        margin-top: 10em;
+        border-radius: 0 5em 5em 0;
+    }
+            
+    #left > .display{
+        width: 48em;
+        height: 35em;
+        margin: 4em;
+        border-radius: 3em;
+    }
+            
+    #left > .display > #pkmn-img{
+        width: 80%;
+        margin: 1em 7em;
+    }
+            
+            
+    #dpad{
+        width: 15em;
+        height: 18em;
+        margin: 0 6em;        
+    }
+            
+    #dpad-arriba, #dpad-abajo{
+        width: 4em;
+        height: 4em;
+        margin-left: 7em;            
+    }
+            
+    #dpad-horizontal{
+        width: 12em;
+        height: 4em;
+        margin-left: 3em;            
+    }
+            
+    #btn-circulo{
+        width: 11em;
+        height: 11em;
+        border-radius: 10em;
+        margin:0 0 7em 9em;           
+    }
+            
+    #right > .display{
+        width: 18em;
+        height: 9.5em;
+        margin: 1em 1em;
+        border: 0.1em solid slategray;
+        font-size: 2.6em;           
+    }
+            
+    #pad{
+        width: 40em;
+        height: 8em;
+        margin: -2.2em 8.5em;
+    }
+            
+    #pad > .btn{
+        width: 6em;
+        height: 6em;
+        border-radius: 1.2em;
+        margin:1.2em 1.2em;                
+    }
+}
+    
+
+
+        /*     Televisores  */
+    
+    
+@media only screen and (min-width:1920px){
+    header{
+        height: 16em;
+    }
+
+    header > h1 {  
+        font-size:5em;
+        margin-left: 20%;
+    }
+            
+    #logo{
+        width: 8%;            
+        margin-left: 25%;
+    }    
+            
+    nav{
+        height: 7em;
+        margin: 0 35em;
+        line-height: 7em;
+    }
+
+    nav > a {
+        padding:0 2em;            
+        font-size: 4em;
+    }
+            
+    #pokedex{
+        width:1000em;
+        margin: 4em auto;
+    }
+            
+    #left{
+        width:65em;
+        height:65em;
+        border-radius: 5em 5em 0 5em;    
+    }
+            
+    #right{
+        width: 60em;
+        height:55em;
+        margin-top: 10em;
+        border-radius: 0 5em 5em 0;
+    }
+            
+    #left > .display{
+        width: 56em;
+        height: 42em;
+        margin: 5em;
+        border-radius: 3em;
+    }
+            
+    #left > .display > #pkmn-img{
+        width: 80%;
+        margin: 1em 7em;
+    }
+            
+            
+    #dpad{
+        width: 15em;
+        height: 18em;
+        margin: 0 8em;        
+    }
+            
+    #dpad-arriba, #dpad-abajo{
+        width: 4em;
+        height: 4em;
+        margin-left: 7em;            
+    }
+            
+    #dpad-horizontal{
+        width: 12em;
+        height: 4em;
+        margin-left: 3em;            
+    }
+            
+    #btn-circulo{
+        width: 11em;
+        height: 11em;
+        border-radius: 10em;
+        margin:0 0 7em 9em;           
+    }
+            
+    #right > .display{
+        width: 18.5em;
+        height: 11em;
+        margin: 1.5em 1em;
+        border: 0.1em solid slategray;
+        font-size: 2.9em;           
+    }
+            
+    #pad{
+        width: 40em;
+        height: 5em;
+        margin: -4em 12em;
+    }
+            
+    #pad > .btn{
+        width: 6em;
+        height: 6em;
+        border-radius: 1.2em;
+        margin:1.2em 1.2em;                
+    }
+}
+    
+    
