@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@1,700&family=Merriweather:wght@300&family=PT+Sans+Narrow&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    font-family: 'Arimo', sans-serif;
+    font-size: 10px;
+    }
+
+body{
+    width:100%;
+    background-color: #fc3d3dcc;
+}
+
+#cabecera{
+    background-color: #f59c27;    
+    height: 6em;   
+}
+
+
+#logo{
+    width: 30%;
+    display: inline-block;
+    text-align:center;
+}
+
+#logo img{
+    width: 20%;        
+}
+
+#titulo{
+    width: 60%;
+    font-family: 'Nanum Pen Script', cursive;
+    color:white;
+    font-size: 3.5em;
+    line-height: 1.5em;
+    text-align:center;
+    display: inline-block;
+}
+
+nav{
+  width: 100%;
+  background-color: #fab879;
+  color: white; 
+  margin-bottom: 2em;
+}
+
+nav ul{
+  width: 90%;
+  margin:  0 auto; 
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 0.4em;
+}
+
+nav ul li:hover{
+  background-color: #fded56;
+}
+
+nav ul li:active {
+  background-color: #f3de1f;
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+.toggle{
+  width:100%;
+  padding: 0.5em 0.5em;
+  text-align: right;
+  font-size: 1.5em;
+  display: none;
+}
+  
+
+#buscar{
+    text-align: center;
+    margin: 1em;
+}
+
+main{
+  width:90%;
+  margin:auto;
+}
+
+
+#elem div{
+    width: 30%;
+    height: 18.5em;
+    margin: 1.2em;    
+    border:0.5px solid #fcb059;
+    border-radius: 1em;
+    display: inline-block;    
+}
+
+#elem div div{
+    width: 25%;
+    border:none;
+    text-align:center;
+    display: inline-block;   
+}
+
+#elem img{
+    width: 60%;
+    height: 18em;
+    padding: 1em;
+    float: left;
+}
+
+
+@media (max-width:639px){
+  #cabecera{
+    height: 5em;   
+  }
+  
+  #titulo{
+    text-align:left;
+    padding-left:1em;    
+  }
+
+  .toggle{
+      display: block;
+  }
+
+  nav ul{
+      width: 100%;
+      display: none;
+  }
+
+  nav ul li{
+      text-align: center;
+      display: block;      
+  }
+
+  .mobile{
+      display: block;
+  }
+
+  #elem{
+    width:32.5em;
+    margin:auto;  
+  }
+  
+  #elem div{
+    width:15em;
+    height: 15em;
+    margin: auto 0.5em 1em;        
+  }
+
+  #elem div div{
+    width: 2.5em;
+    padding:1em 0.5em;
+    font-size:1em;    
+  }
+
+  #elem img{
+    width: 10em;
+    height: 15em;
+    padding: 1em;
+    float: left;
+  }
+}
+
+
+
+/*     smarthphone horizontal  & tablets vertical*/
+@media only screen and (min-width:640px) and (max-width:1023px){
+
+  #cabecera{
+    height: 6em;   
+  }
+
+  #logo{
+    width: 40%;    
+  }
+
+  #logo img{
+    width: 15%;        
+  }
+
+  #titulo{
+    width: 40%;
+    text-align:left;
+    padding-left:1.5em;    
+  }
+
+  nav{
+    font-size: 1.7em;    
+  }
+
+  nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li{
+    width: 100%;
+    text-align: center;   
+  }    
+
+  #elem{
+    width:58em;
+    margin:auto;
+  }
+
+  #elem div{
+    width:18em;
+    height: 18em;
+    margin: auto 0.6em 1.5em;        
+  }
+
+  #elem div div{
+    width: 3em;
+    padding:1em 0.02em;
+    font-size:1em;    
+  }
+
+  #elem img{
+    width: 13em;
+    height: 18em;
+    padding: 1.2em;
+    float: left;
+  }
+}
+
+
+
+/*     tablets horizontal & laptop vertical (touch screen)    */
+@media only screen and (min-width:1024px) and (max-width:1279px){
+
+  #cabecera{
+    height: 8em;   
+  }
+ 
+  #logo{
+    width: 45%;
+  }
+
+  #logo img{
+    width: 11%;
+  }
+
+  #titulo{
+    width: 40%;
+    text-align:left;
+    padding-left:1.5em;    
+    font-size: 5em;
+  }
+
+  header{
+    height: 7em;
+  }
+    
+  header > h1 {  
+    font-size:3em;    
+  }
+                
+  nav{
+    font-size: 2em;    
+  }
+    
+  nav ul{
+    width: 100%;
+    display: flex;
+  }
+    
+  nav ul li{
+    width: 100%;
+    text-align: center;   
+  }
+
+  #elem{
+    width:100em;
+    margin:auto;
+  }
+
+  #elem div{
+    width:18em;
+    height: 18em;
+    margin: 0.5em 0.8em 2em;        
+  }
+
+  #elem div div{
+    width: 3em;
+    padding:1em 0.02em;
+    font-size:1em;    
+  }
+
+  #elem img{
+    width: 13em;
+    height: 18em;
+    padding: 1.2em;
+    float: left;
+  }
+}
+        
+ 
+
+        /*     laptops    & Monitores  */
+@media only screen and (min-width:1280px) and (max-width:1919px){
+  #cabecera{
+    height: 10em;   
+  }
+ 
+  #logo{
+    width: 40%;
+  }
+
+  #logo img{
+    width: 15%;
+  }
+
+  #titulo{
+    width: 40%;
+    text-align:left;
+    padding-left:1.5em;    
+    font-size: 4EM;
+  }
+
+  header{
+    height: 10em;
+  }
+
+  header > h1 {  
+    font-size:5em;
+  }
+            
+  nav{
+    font-size: 2.1em;
+  }    
+  
+  nav ul{
+    width: 100%;
+    display: flex;
+  }
+
+  nav ul li{
+    width: 100%;
+    text-align: center;   
+  }
+
+  #elem{
+    width:116em;
+    margin:auto;
+  }
+
+  #elem div{
+    width:22em;
+    height: 22em;
+    margin: 1em 0.5em 2em;        
+  }
+
+  #elem div div{
+    width: 3em;
+    padding:1em 0.02em;
+    font-size:1.2em;    
+  }
+
+  #elem img{
+    width: 16em;
+    height: 22em;
+    padding: 1.5em;
+    float: left;
+  }  
+}
+
+
+
+        /*     Televisores  */      
+@media only screen and (min-width:1920px){
+  #cabecera{
+    height: 17em;   
+  }
+ 
+  #logo{
+    width: 40%;
+  }
+
+  #logo img{
+    width: 15%;
+  }
+
+  #titulo{
+    width: 40%;
+    text-align:left;
+    padding-left:1.5em;    
+    font-size: 10em;
+  }
+
+  header{
+    height: 16em;
+  }
+
+  header > h1 {  
+    font-size:5em;
+  }
+            
+  nav{
+    width: 100%;
+    height: 7em;
+    line-height: 7em;
+  }
+
+  nav ul{
+    width: 100%;
+    display: flex;
+  }
+
+  nav ul li{
+    width: 100%;
+    text-align: center; 
+    font-size: 3em;    
+  }
+
+  nav ul li:hover{
+    height: 2.3em;
+  }
+
+  #buscar{
+    width: 20em;
+    text-align: center;
+    margin: 3em auto;
+   }
+  
+  #elem{
+    width:170em;
+    margin:auto;    
+  }
+
+  #elem div{
+    width:26em;
+    height: 26em;
+    margin: 1em 1.1em 2em;        
+  }
+
+  #elem div div{
+    width: 2em;
+    padding:1em 0.02em;
+    font-size:1.6em;    
+  }
+
+  #elem img{
+    width: 17em;
+    height: 25em;
+    padding: 2em 1.5em;
+    float: left;
+  }
+}
+    
+    
+    

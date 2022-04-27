@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/API_musica.css">
+    <script type="text/javascript" src="js/API_menu.js"></script>        
+    <title>Anime</title>
+</head>
+<body>
+    <header>
+        <section id="cabecera">
+            <div id="logo">
+                <img src="inicio/itunes.png" alt="Logo">
+            </div>
+            
+            <h1 id="titulo">Musica de Itunes</h1>
+        </section>       
+    </header>
+    <nav>
+        <div class="toggle">
+            <i class="material-icons-outlined" onclick="mobile()">menu</i>
+        </div>
+        <ul id="idMobile">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Acerca</a></li>
+            <li><a href="#">Contacto</a></li>                
+        </ul>
+    </nav>
+
+    <main>
+        <div id="buscar">
+            <input type="text" id="art" value="Jack Johnson">
+            <button onclick="buscar()">Buscar</button>
+        </div>
+        
+        <section id="elem"></section>
+    </main>
+    <script type="text/javascript" src="js/API_musica.js"></script>    
+</body>
+</html>
+
