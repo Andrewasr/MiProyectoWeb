@@ -29,10 +29,9 @@ header{
 header > h1 {
     display:inline-block;
     margin-left:10%;
-    font-size: 2.5em;
-    
-    
+    font-size: 2.5em;    
 }
+
 
 #logo{
     width:4.5em;
@@ -669,16 +668,16 @@ li > p{
     
         @media only screen and (min-width:1920px){
             header{
-                height: 16em;
+                height: 18em;
             }
         
             header > h1 {  
-                font-size:5em;
-                margin-left: 20%;
+                font-size:2em;
+                margin-left: 10%;
             }
                     
             #logo{
-                width: 8%;            
+                width: 6%;            
                 margin-left: 25%;
             }    
                     
@@ -718,11 +717,14 @@ li > p{
                 border-radius: 3em;
             }
                     
+      
+
             #left > .display > #pkmn-img{
                 width: 80%;
-                margin: 1em 7em;
+                margin: 1em 4em;
             }
                     
+            
                     
             #dpad{
                 width: 15em;
