@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pokedex3.css">
+    <script src="jspoke/menu.js"></script>
+    <title>Pokédex</title>
+
+</head>
+<body>
+    <header>
+        <img id = "logo" src="poke/pokedex2.webp" alt="logo">
+        <h1>Mi Pokédex</h1>
+    </header>
+  
+
+    <nav class="menubar" id="menu">
+        <ul class="items-nav">
+            <span class="material-icons-outlined" class="icon" onclick="menu()">
+                menu</span>
+          <li class="item"><a href="index.html" class="items-menu">Index</a></li>
+          <li class="item"><a href="#" class="items-menu">Nosotros</a></li>
+          <li class="item"><a href="#" class="items-menu">Servicios</a></li>
+          <li class="item"><a href="#" class="items-menu">Cont&aacute;ctanos</a></li>
+        </ul>
+    </nav>
+
+
+    <hr>
+    <main>
+        <div id = "pokedex">
+            <div id = "left">
+                <div class = "display">           
+                    <img id = "pkmn-img" src="poke/charmander.png" alt="pokémon">
+                </div>
+                <div id = "dpad" id="dpad" onclick="buscar()">
+                    <div id = "dpad-arriba"></div>
+                    <div id = "dpad-horizontal"></div>
+                    <div id = "dpad-abajo"></div>
+                </div>
+                <div id ="btn-circulo"></div>
+
+            </div>
+            <div id = "right">
+                <div class = "display">           
+                    <ul>
+                        <li>
+                            <p id="name"><b>Nombre:</b>Charmander</p>
+                        </li>
+                        <li>
+                            <p id="type"><b>Tipo:</b>Fuego</p>
+                        </li>
+                        <li>
+                            <p  id="height"><b>Altura:</b>80 cm</p>
+                        </li>
+                        <li>
+                            <p id="weight"><b>Peso:</b>6 kg</p>
+                        </li>
+                        <li>
+                            <p id="des"><b>Descripción:</b>lanza fuego por la boca</p>
+                        </li>                        
+                    </ul>
+                </div>
+                <div id = "pad">
+                    <div class="btn"></div>
+                    <div class="btn"></div>
+                    <div class="btn"></div>
+                    <div class="btn"></div>
+                    <div class="btn"></div>
+                    <div class="btn"></div>
+                    <div class="btn"></div>
+                    <div class="btn"></div>
+               </div>
+            </div>
+
+        </div>
+
+
+    </main>
+    <script type="text/javascript" src="jspoke/poke.js"></script>    
+    <script>
+        buscar();
+    </script>
+</body>
+</html>
